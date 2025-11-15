@@ -32,7 +32,7 @@ SafeLine addresses these challenges by providing:
 ## ✨ Key Features
 
 ### For Citizens
-1. **Easy Crime Reporting**
+1. **Easy Crime Reporting*
    - Simple form with multiple crime type categories
    - Location input with map integration ready
    - Detailed description textarea
@@ -79,15 +79,6 @@ SafeLine addresses these challenges by providing:
 - **Form Handling:** React Hook Form
 - **Data Fetching:** TanStack React Query
 
-### Backend
-- **Server:** Express.js
-- **Language:** TypeScript
-- **Database:** SQLite (mock in-memory for demo)
-- **Environment:** Node.js
-
-### Deployment Ready
-- **Frontend:** Vercel, Netlify, or any static hosting
-- **Backend:** Render, Railway, Heroku, or any Node.js host
 
 ---
 
@@ -141,94 +132,6 @@ safeline/
 - Node.js 16+ and npm/pnpm
 - Git
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd safeline
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   # or: npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   pnpm dev
-   # or: npm run dev
-   ```
-
-   The app will be available at `http://localhost:5173` (Vite default)
-   - Frontend: http://localhost:5173
-   - Backend API: http://localhost:5173/api/*
-
-### Development Commands
-
-```bash
-pnpm dev           # Start development server
-pnpm build         # Production build
-pnpm build:client  # Build only client
-pnpm build:server  # Build only server
-pnpm start         # Start production server
-pnpm typecheck     # TypeScript type checking
-pnpm test          # Run tests (Vitest)
-```
-
----
-
-## 📋 Pages & Routes
-
-### Public Routes
-
-| Route | Component | Purpose |
-|-------|-----------|---------|
-| `/` | Index.tsx | Home page with hero section and features |
-| `/report` | Report.tsx | Submit a new crime report |
-| `/track` | Track.tsx | Track report status by ID |
-| `/login` | Login.tsx | Admin authentication |
-
-### Protected Routes
-
-| Route | Component | Purpose |
-|-------|-----------|---------|
-| `/dashboard` | Dashboard.tsx | Admin report management (requires login) |
-
----
-
-## 🔌 API Endpoints
-
-### Crime Reports
-
-**Submit Report**
-```
-POST /api/reports
-Body: { crimeType, location, description }
-Response: { success, trackingId }
-```
-
-**Get Report Status**
-```
-GET /api/reports/:id
-Response: { id, type, location, status, submittedDate, ... }
-```
-
-**Get All Reports (Admin)**
-```
-GET /api/reports
-Response: [{ id, type, location, status, ... }, ...]
-```
-
-**Update Report Status (Admin)**
-```
-PUT /api/reports/:id
-Body: { status }
-Response: { success, report }
-```
-
----
 
 ## 🎨 Design & Theming
 
@@ -252,16 +155,7 @@ Response: { success, report }
 
 ---
 
-## 🔐 Security Features
-
-- **Anonymous Reporting:** No user identification required
-- **Encrypted Submissions:** All data is securely transmitted
-- **Admin Authentication:** Login required for dashboard access
-- **CORS Protection:** Server-side CORS configuration
-- **Input Validation:** Form validation on client and server
-
----
-
+--
 ## 📊 Mock Data
 
 The application includes pre-populated mock reports for demonstration:
@@ -297,39 +191,7 @@ The application includes pre-populated mock reports for demonstration:
 
 ---
 
-## 🚀 Deployment
 
-### Frontend Deployment (Vercel/Netlify)
-
-1. Build the project:
-   ```bash
-   pnpm build
-   ```
-
-2. Deploy the `dist/spa` folder to your hosting provider
-
-### Backend Deployment (Render/Railway/Heroku)
-
-1. Build the project:
-   ```bash
-   pnpm build
-   ```
-
-2. Deploy using:
-   ```bash
-   pnpm start
-   ```
-
-3. Set environment variables as needed
-
-### Environment Variables
-
-Create a `.env` file:
-```
-PING_MESSAGE=SafeLine API
-```
-
----
 
 ## 🔮 Future Improvements
 
@@ -360,17 +222,6 @@ PING_MESSAGE=SafeLine API
 
 ---
 
-## 🧪 Testing
-
-Run tests with Vitest:
-```bash
-pnpm test
-```
-
-Tests are organized by feature and use React Testing Library for component tests.
-
----
-
 ## 📝 Best Practices
 
 ### Code Organization
@@ -392,30 +243,10 @@ Tests are organized by feature and use React Testing Library for component tests
 
 ---
 
-## 🤝 Contributing
-
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Create a pull request with description
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
 ## 📞 Support & Contact
 
 **SafeLine Support**
-- **Email:** support@safeline.report
-- **Phone:** +1 (555) 123-4567
-- **Address:** 123 Safety Street, Security City, SC 12345
-
-**Website:** safeline.report (coming soon)
-
+- **Email:** mdnuruddin2002@gmail.com
 ---
 
 ## 🎯 Project Stats
@@ -431,4 +262,3 @@ This project is open source and available under the MIT License.
 
 **Made with ❤️ for community safety.**
 
-**Theme:** Smart Solutions, Simple Codes
