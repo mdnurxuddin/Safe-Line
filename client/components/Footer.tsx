@@ -49,15 +49,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span className="text-slate-600 text-sm">+1 (555) 123-4567</span>
+                <span className="text-slate-600 text-sm"></span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-teal-500 mt-0.5 flex-shrink-0" />
-                <span className="text-slate-600 text-sm">support@safeline.report</span>
+                <span className="text-slate-600 text-sm">mdnurddin2002@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span className="text-slate-600 text-sm">123 Safety Street, Security City, SC 12345</span>
+                <span className="text-slate-600 text-sm"></span>
               </li>
             </ul>
           </div>
